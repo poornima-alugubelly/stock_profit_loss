@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&display=swap");
+:root {
+	--primary-color: aqua;
+	--secondary-color: green;
+}
+
+.sadTheme {
+	--primary-color: orange;
+	--secondary-color: red;
+}
+body {
+	background-image: linear-gradient(
+		to bottom right,
+		var(--primary-color),
+		var(--secondary-color)
+	);
+	font-family: "Orbitron", sans-serif;
+}
+.container {
+	width: 14%;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 1.5rem;
+	color: var(--secondary-color);
+	text-indent: 0.1em;
+	text-shadow: 1px 1px 3px white;
+	font-size: 3rem;
+}
+input,
+label {
+	display: block;
+	margin-bottom: 0.5rem;
+	font-weight: bold;
+	font-size: 1rem;
+}
+#button {
+	background-color: var(--secondary-color);
+	color: white;
+	font-weight: bold;
+	padding: 0.3rem;
+	width: 35%;
+	margin-top: 1rem;
+}
+
+#output {
+	font-weight: bold;
+	font-size: 1rem;
+}
+
+.image {
+	width: 40%;
+	height: 40%;
+	margin: auto;
+	display: block;
+}
