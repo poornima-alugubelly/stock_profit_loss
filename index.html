@@ -1,34 +1,27 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Stock-profit-loss</title>
-  </head>
-  <body>
-    
-    <h1>Check your stock gains and losses</h1>
-    <div class="container">
-    
-       <!-- added onsubmit="return false" to stop form from refreshing -->
-    <form id="form" onsubmit="return false">  
-    <label for="purchase-price"> Purchase-price:</label>
-    <input id="purchase-price" type="number" min="0" step ="any"  />
-    <label for="stock-quanity"> Stock-quanity:</label>
-    <input id="stock-quanity" type="number" min="0" step="any"  />
-    <label for="current-price"> Current Price:</label>
-    <input id="current-price" type="number" min="0" step="any"  />
-    <button id="button" type="submit">check</button>
-    <h3 id="output"></h3>
-  
-</form>
-</div>
-<img class="image" src="./img/transparentBG.jpg" style="opacity: 0;" >  <!-- if src="" is used then a white outline persists as 
-                                                                           the browser expects an image-->
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Stock-profit-loss</title>
+	</head>
+	<body>
+		<h1>Check your stock gains and losses</h1>
+		<div class="container">
+			<!-- added onsubmit="return false" to stop form from refreshing -->
+			<form id="form" onsubmit="return false">
+				<label for="purchase-price"> Purchase-price:</label>
+				<input id="purchase-price" type="number" min="0" step="any" />
+				<label for="stock-quanity"> Stock-quanity:</label>
+				<input id="stock-quanity" type="number" min="0" step="any" />
+				<label for="current-price"> Current Price:</label>
+				<input id="current-price" type="number" min="0" step="any" />
+				<button id="button" type="submit">check</button>
+			</form>
+		</div>
+		<div id="output"></div>
 
-
-
-    <script src="app.js"></script>
-  </body>
+		<script src="app.js"></script>
+	</body>
 </html>
