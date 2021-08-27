@@ -46,13 +46,16 @@ label {
 }
 
 #output {
+	display: block;
+	text-align: center;
 	font-weight: bold;
 	font-size: 1rem;
 }
 
+.output-txt {
+	padding: 0.5rem;
+}
 .image {
 	width: 40%;
 	height: 40%;
-	margin: auto;
-	display: block;
 }
